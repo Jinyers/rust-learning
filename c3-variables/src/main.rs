@@ -6,14 +6,19 @@ fn main() {
 
     // Will cause error:
     // immutable_var = 2;
-    
+
     // Creating mutable variable;
     let mut mutable_var = 5;
     
-    println!("Var x = {}", mutable_var);
+    println!("Mutable var = {}", mutable_var);
 
     // Now it's okey, because variable mutable;
     mutable_var = 4;
 
-    println!("Var x = {}", mutable_var);
+    println!("Mutable var = {}", mutable_var);
+
+    // Creating constant. Make sure to specify type of var.
+    const MAX_VALUE: u32 = 1_000_000;
+    
+    println!("MAX_VALUE is {}", MAX_VALUE);
 }
