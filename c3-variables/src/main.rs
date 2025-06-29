@@ -1,10 +1,10 @@
 fn main() {
-    // Creating immutable variable;
-    let x = 5;
+    // Creating mutable variable;
+    let mut x = 5;
     
     println!("Var x = {}", x);
 
-    // Cause error, because variable is immutable;
+    // Now it's okey, because variable mutable;
     x = 4;
 
     println!("Var x = {}", x);
