@@ -1,11 +1,19 @@
 fn main() {
-    // Creating mutable variable;
-    let mut x = 5;
+    // Creating immutable variable;
+    let immutable_var = 6;
     
-    println!("Var x = {}", x);
+    println!("Immutable var = {}", immutable_var);
+
+    // Will cause error:
+    // immutable_var = 2;
+    
+    // Creating mutable variable;
+    let mut mutable_var = 5;
+    
+    println!("Var x = {}", mutable_var);
 
     // Now it's okey, because variable mutable;
-    x = 4;
+    mutable_var = 4;
 
-    println!("Var x = {}", x);
+    println!("Var x = {}", mutable_var);
 }
